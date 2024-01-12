@@ -50,7 +50,8 @@ class First extends React.Component {
         <br/>
         <br/>
         
-        <label>Focu element using Rect.ref(useRef)</label>
+        <label>Focus element using Rect.ref(useRef)</label>
+        <br />
         <input ref={this.inputref} />
         <br/>
         <br/>
@@ -59,10 +60,10 @@ class First extends React.Component {
        htmlFor into the label at that time when the user clickes on the label the input filed to that labels id is focused   
        */}
        
-       <form> 
+       {/* <form> 
         <label htmlFor="username">Username:</label>
         <input type="text" id="username" name="username" />
-      </form>
+      </form> */}
 
         <Profile name={"Pratham Barot"} email={"barot12@gmail.com"} />
       </>

@@ -5,13 +5,11 @@ export default class CompA extends Component {
   render() {
     return (
         <>
-       <h1> Com A</h1>
       <UserConsumer>
-        {username =>{
-            return <div>Hello {username.name} and your department is {username.department}</div>
+        {context =>{
+            return <div>Hello {context.user.name} and your Department : {context.user.department}</div>
         }}
       </UserConsumer>
-      
       </>
     )
   }
